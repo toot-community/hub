@@ -2,6 +2,7 @@ import { DateTime } from "luxon";
 import { feedPlugin } from "@11ty/eleventy-plugin-rss";
 import embeds from "eleventy-plugin-embed-everything";
 import syntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
+import { eleventyImageTransformPlugin } from "@11ty/eleventy-img"
 
 export default async function(eleventyConfig) {
 
@@ -38,6 +39,17 @@ export default async function(eleventyConfig) {
 				email: "support@toot.community",
 			}
 		}
+	});
+
+  // Image transformation
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+		extensions: "html",
+		widths: [800, 500, 300],
+		defaultAttributes: {
+			sizes: "90vw",
+			loading: "lazy",
+			decoding: "async",
+		},
 	});
 
   // Copy assets
