@@ -1,0 +1,9 @@
+<header>
+  <h1>Toot.community Hub</h1>
+
+  <nav>
+    {% for link in nav %}
+      <a href="{{ link.url }}">{{ link.text }}</a>
+    {% endfor %}
+  </nav>
+</header>

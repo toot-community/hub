@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="{{ eleventy.generator }}">
+    <meta name="fediverse:creator" content="@support@toot.community">
+    <meta property="og:title" content="{{ title or metaTitle | safe }}" />
+    {% if summary %}<meta property="og:description" content="{{ summary | escape }}" />{% endif %}
+    <title>{{ title or metaTitle | safe }}</title>
+    {% if summary %}<meta name="description" content="{{ summary | escape }}" />{% endif %}
+    <link rel="canonical" href={{ site.url }}{{ page.url }}>
+    <meta name="robots" content="index, follow" />
+    <link rel="alternate" type="application/rss+xml" href="{{ site.url }}/feed.xml" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <link rel="stylesheet" href="/css/custom.css" />
+  </head>
+  <body>
+    {% include "partials/header.html" %}
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+    {% include "partials/footer.html" %}
+  </body>
+</html>

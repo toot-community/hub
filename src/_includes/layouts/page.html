@@ -1,0 +1,8 @@
+{% extends "layouts/base.html" %} 
+{% block content %}
+{% if page.url == "/" %}
+{% else %}
+<h1>{{ title }}</h1>
+{% endif %}
+{{ content | safe }}
+{% endblock %}

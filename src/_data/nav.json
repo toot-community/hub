@@ -1,0 +1,26 @@
+[
+  {
+    "text": "Home",
+    "url": "/"
+  },
+  {
+    "text": "About",
+    "url": "/about/"
+  },
+  {
+    "text": "Code of Conduct",
+    "url": "/coc/"
+  },
+  {
+    "text": "Team",
+    "url": "/team/"
+  },
+  {
+    "text": "Support us",
+    "url": "/support/"
+  },
+  {
+    "text": "Status",
+    "url": "https://status.toot.community/"
+  }
+]
