@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="generator" content="Eleventy v3.1.0">
     <meta name="fediverse:creator" content="@support@toot.community">
-    <meta property="og:title" content="Team">
-    <meta property="og:description" content="Meet the team behind toot.community.">
-    <title>Team</title>
-    <meta name="description" content="Meet the team behind toot.community.">
-    <link rel="canonical" href="/team/">
+    <meta property="og:title" content="Finances">
+    
+    <title>Finances</title>
+    
+    <link rel="canonical" href="/finances/">
     <meta name="robots" content="index, follow">
     <link rel="alternate" type="application/rss+xml" href="/feed.xml">
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
@@ -20,15 +20,28 @@
   <h1>toot.community Hub</h1>
 
   <nav>
-    <a href="/">Home</a><a href="/about/">About</a><a href="/coc/">Code of Conduct</a><a href="/team/" aria-current="page">Team</a><a href="/support/">Support us</a><a href="/finances/">Finances</a><a href="https://status.toot.community/">Status</a>
+    <a href="/">Home</a><a href="/about/">About</a><a href="/coc/">Code of Conduct</a><a href="/team/">Team</a><a href="/support/">Support us</a><a href="/finances/" aria-current="page">Finances</a><a href="https://status.toot.community/">Status</a>
   </nav>
 </header>
     <main>
       
 
-<h1>Team</h1>
+<h1>Finances</h1>
+
+<p>This is the finances page of toot.community. Here you can find information about our financial status, including income and expenses, as well as how we manage the funds to keep the instance running smoothly.</p>
 
 
+<div class="finances-container">
+  <p class="notice">The current balance is <span id="current-balance">€ loading...</span></p>
+
+  <div class="overview-section">
+    <h3>Monthly Overview</h3>
+    <table id="finances">
+    </table>
+  </div>
+</div>
+
+<script src="/js/finances.js"></script>
 
     </main>
     <footer>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-  <title>Toot.community Hub</title>
+  <title>toot.community Hub</title>
   <subtitle></subtitle>
   <link href="https://hub.toot.community/feed.xml" rel="self" />
   <link href="https://hub.toot.community/" />
   <updated>2025-03-18T10:00:00Z</updated>
   <id>https://hub.toot.community/</id>
   <author>
-    <name>Toot.community</name>
+    <name>toot.community</name>
     <email>support@toot.community</email>
   </author>
   <entry>
