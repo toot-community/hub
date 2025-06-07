@@ -1,9 +1,13 @@
 <header>
-  <h1>Toot.community Hub</h1>
+  <h1>toot.community Hub</h1>
 
   <nav>
-    {% for link in nav %}
-      <a href="{{ link.url }}">{{ link.text }}</a>
-    {% endfor %}
+    {% for link in nav -%}
+      {% if link.url == page.url -%}
+        <a href="{{ link.url }}" aria-current="page">{{ link.text }}</a>
+      {%- else -%}
+        <a href="{{ link.url }}">{{ link.text }}</a>
+      {%- endif %}
+    {%- endfor %}
   </nav>
 </header>

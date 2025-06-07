@@ -31,11 +31,11 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "Toot.community Hub",
+			title: "toot.community Hub",
 			subtitle: "",
 			base: "https://hub.toot.community/",
 			author: {
-				name: "Toot.community",
+				name: "toot.community",
 				email: "support@toot.community",
 			}
 		}
@@ -54,6 +54,7 @@ export default async function(eleventyConfig) {
 
   // Copy assets
   eleventyConfig.addPassthroughCopy("src/css");
+  eleventyConfig.addPassthroughCopy("src/js");
   eleventyConfig.addPassthroughCopy("src/favicon/");
   eleventyConfig.addPassthroughCopy({ 'src/robots.txt': '/robots.txt' });
   eleventyConfig.addPassthroughCopy({ 'src/CNAME': '/CNAME' });

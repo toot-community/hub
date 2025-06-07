@@ -26,3 +26,126 @@
   stroke: currentColor;
   fill: currentColor;
 }
+
+/* Finances page styles */
+.finances-container {
+  margin-top: 2rem;
+}
+
+.finances-container .balance-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.finances-container .balance-amount {
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 0;
+  color: var(--text);
+}
+
+.finances-container .overview-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.finances-container table {
+  width: 100%;
+}
+
+.finances-container .table-wrapper {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.finances-container .month-summary {
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.finances-container .month-summary:hover {
+  background-color: var(--hover);
+}
+
+.finances-container .month-summary.expanded {
+  background-color: var(--accent-bg);
+}
+
+.finances-container .details-arrow {
+  text-align: center;
+  color: var(--text-light);
+  transition: transform 0.2s;
+}
+
+.finances-container .month-summary:hover .details-arrow {
+  color: var(--accent);
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .finances-container table {
+    min-width: 600px;
+  }
+  
+  .finances-container .transactions-table {
+    min-width: 500px;
+    font-size: 0.8rem;
+  }
+  
+  .finances-container .transactions-table th,
+  .finances-container .transactions-table td {
+    padding: 0.5rem;
+  }
+  
+  .finances-container .balance-amount {
+    font-size: 2rem;
+  }
+}
+
+.finances-container .income {
+  color: #22c55e;
+  font-weight: 500;
+}
+
+.finances-container .expenses,
+.finances-container .expense {
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.finances-container .net-result.positive {
+  color: #22c55e;
+  font-weight: 600;
+}
+
+.finances-container .net-result.negative {
+  color: #dc2626;
+  font-weight: 600;
+}
+
+.finances-container .transactions-row td {
+  padding: 0;
+  background-color: var(--accent-bg);
+}
+
+.finances-container .transactions-table {
+  width: calc(100% - 2rem);
+  margin: 1rem;
+  font-size: 0.9rem;
+}
+
+.finances-container .transactions-table th {
+  background-color: var(--bg);
+  font-weight: 500;
+  padding: 0.75rem;
+}
+
+.finances-container .transactions-table td {
+  padding: 0.75rem;
+}
+
+.finances-container .metadata {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-light);
+}

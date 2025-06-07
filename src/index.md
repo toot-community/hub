@@ -1,7 +1,7 @@
 ---
-title: Toot.community Hub
+title: toot.community Hub
 layout: layouts/page.html
-summary: A hub for Toot.community, a Mastodon instance.
+summary: A hub for toot.community, a Mastodon instance.
 ---
 
 <p class="notice">

@@ -1,0 +1,20 @@
+{% extends "layouts/base.html" %} 
+{% block content %}
+{% if page.url == "/" %}
+{% else %}
+<h1>{{ title }}</h1>
+{% endif %}
+{{ content | safe }}
+
+<div class="finances-container">
+  <p class="notice">The current balance is <span id="current-balance">€ loading...</span></p>
+
+  <div class="overview-section">
+    <h3>Monthly Overview</h3>
+    <table id="finances">
+    </table>
+  </div>
+</div>
+
+<script src="/js/finances.js"></script>
+{% endblock %}

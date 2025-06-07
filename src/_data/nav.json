@@ -20,6 +20,10 @@
     "url": "/support/"
   },
   {
+    "text": "Finances",
+    "url": "/finances/"
+  },
+  {
     "text": "Status",
     "url": "https://status.toot.community/"
   }
