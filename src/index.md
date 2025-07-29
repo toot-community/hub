@@ -4,7 +4,7 @@ layout: layouts/page.html
 summary: A hub for toot.community, a Mastodon instance.
 ---
 
-Welcome to toot.community, your gateway to the broader Fediverse. We are a generic Mastodon instance proudly hosted in the Netherlands, dedicated to providing an open, advertisement-free, and respectful environment for all our users.
+Toot.community is your gateway to the broader Fediverse. We are a generic Mastodon instance proudly hosted in the Netherlands, dedicated to providing an open, advertisement-free, and respectful environment for all our users.
 
 Our instance serves as a platform for dialogue, connection, and shared learning, embodying the values of inclusivity and respect. We strive to maintain a welcoming atmosphere for individuals from all walks of life, regardless of their race, ethnicity, gender, religion, or nationality.
 
