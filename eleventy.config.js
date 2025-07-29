@@ -31,7 +31,7 @@ export default async function(eleventyConfig) {
 		},
 		metadata: {
 			language: "en",
-			title: "toot.community Hub",
+			title: "toot.community hub",
 			subtitle: "",
 			base: "https://hub.toot.community/",
 			author: {
