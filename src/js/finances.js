@@ -101,6 +101,9 @@ class FinancesManager {
     const { summary } = monthData;
     const monthName = this.formatMonthName(month);
     const netResultClass = summary.net_result >= 0 ? 'positive' : 'negative';
+    const netResultDisplay = summary.net_result >= 0 ? 
+      this.formatCurrency(summary.net_result) : 
+      `-${this.formatCurrency(Math.abs(summary.net_result))}`;
 
     return this.createElement('tr', {
       className: 'month-summary',
@@ -108,9 +111,9 @@ class FinancesManager {
       innerHTML: `
         <td class="month-name">${monthName}</td>
         <td class="income">${this.formatCurrency(summary.total_income)}</td>
-        <td class="expenses">${this.formatCurrency(Math.abs(summary.total_expenses))}</td>
+        <td class="expenses">-${this.formatCurrency(Math.abs(summary.total_expenses))}</td>
         <td class="net-result ${netResultClass}">
-          ${this.formatCurrency(summary.net_result)}
+          ${netResultDisplay}
         </td>
         <td class="transaction-count">${summary.transaction_count}</td>
         <td class="details-arrow">▼</td>
@@ -168,6 +171,9 @@ class FinancesManager {
     const { amount, date, payee_name, memo } = transaction;
     const isIncome = amount > 0;
     const amountClass = isIncome ? 'income' : 'expense';
+    const displayAmount = isIncome ? 
+      this.formatCurrency(amount) : 
+      `-${this.formatCurrency(Math.abs(amount))}`;
 
     return this.createElement('tr', {
       innerHTML: `
@@ -175,7 +181,7 @@ class FinancesManager {
         <td>${this.escapeHtml(payee_name)}</td>
         <td>${this.escapeHtml(memo) || '-'}</td>
         <td class="${amountClass}">
-          ${this.formatCurrency(Math.abs(amount))}
+          ${displayAmount}
         </td>
       `
     });
