@@ -116,6 +116,7 @@
 .finances-container .expense {
   color: #dc2626;
   font-weight: 500;
+  width: 6rem;
 }
 
 .finances-container .net-result.positive {
